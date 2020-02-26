@@ -1,0 +1,49 @@
+
+<body>
+    <form method="get" action="/LoginServlet">
+        User Name: <input type="text" name="UserName" value="Praveen" pattern="[A-Z][A-Za-z0-9]{7}" /><br/><!-- INPUT IS INLINE ELEMENT-->
+        <span style="color: crimson;">* </span>
+        Password:<input type="password" name="Password" autofocus required /><br>
+        * Mobile:<input type="number"    name="mobile" required placeholder="give number"  /><br>
+       * Email: <input type="email"required title="kanisk@gmail.com"/><br/>
+
+       <label for="DOB">DOB</label> <input type="date" name="DOB"><br>
+PinCode: <input type="text" name =" PinCode" pattern="[0-9]{6}">
+<br>
+        <label style="color: chocolate;">Gender:</label> <input type="radio" name="gender" value="male" >Male <input type="radio" name="gender" value="Female">Female<br>
+Courses: <input type="checkbox" name="course1" value="HTML"> HTML
+<input type="checkbox" name="course2" value="JAVA"> JAVA
+<input type="checkbox" name="course3" value="CSS"> CSS
+<BR>
+      
+    REMARKS:<textarea rows="4" cols="30" name="REMARK"></textarea>
+<br>
+City:<select name="City" size="2" >
+    <option value="">choose</option>
+
+    <option value="HYD">Hyderabad</option>
+    <option value="BLR" selected>Banglore</option>
+    <option value="chennai">chennai</option>
+
+
+</select>
+<br>
+
+Country: <input type="text" list="country" name="countrylist"/>
+<datalist id ="country">
+    <option value="india"></option>
+    <option value="US"></option>
+    <option value="brazil"></option>
+    <option value="japan"></option>
+
+</datalist>
+<br>
+Filter: <input type="range" min="0" max="90000">
+<br>
+Search:<input  type="search">
+Upload Doc: <input type="file">
+<br>
+    <input type="submit" value="Login"><input type="reset" value="reset">
+    </form> 
+    *fields are mandatory
+</body>
